@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Classic a Böngésződben</title>
+    
+    <style>
+        /* Alapvető stílusok a háttérhez és betűhöz */
+        body {
+            font-family: sans-serif;
+            background-color: #2c3e50; /* Sötétkék háttér */
+            color: #ecf0f1; /* Világos szöveg */
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Stílusok a fő konténernek, ahol a cím és a játék van */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #34495e; /* Kicsit világosabb háttér a tartalomnak */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Stílus a játéknak (iframe) */
+        .minecraft-frame {
+            border: 4px solid #f39c12; /* Narancssárga keret a játékkép körül */
+            border-radius: 8px;
+            width: 100%; /* Kitölti a konténer szélességét */
+            height: 600px; /* Megfelelő magasság a játéknak */
+            max-width: 1000px; /* Maximális szélesség beállítása */
+            display: block;
+            margin: 20px auto; /* Középre igazítás */
+        }
+        
+        /* Stílus a gomboknak és linkeknek */
+        .link-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #2ecc71; /* Zöld gomb */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        .link-button:hover {
+            background-color: #27ae60;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🧱 Minecraft Classic a Böngészőben!</h1>
+        <p>Játssz a Minecraft legelső, 2009-es verziójával, ami teljesen legális a Mojang jóvoltából.</p>
+        
+        <iframe 
+            class="minecraft-frame"
+            src="https://classic.minecraft.net/" 
+            frameborder="0" 
+            allowfullscreen
+            allow="gamepad"
+            title="Minecraft Classic Játék"
+        ></iframe>
+        
+        <p><strong>Tipp:</strong> Kattints az iframe-re, majd nyomd meg a 'B' gombot az építéshez, és az 'R' gombot a blokkok törléséhez. Nézd meg a hivatalos oldalt további infókért:</p>
+        
+        <a href="https://classic.minecraft.net/" target="_blank" class="link-button">Hivatalos Oldal Megtekintése</a>
+    </div>
+
+</body>
+</html>
